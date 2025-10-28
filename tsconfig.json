@@ -2,15 +2,20 @@
   "compilerOptions": {
     "sourceMap": false,
     "alwaysStrict": true,
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "types": [
       "node",
       "@wdio/globals/types",
       "@wdio/jasmine-framework",
-      "expect-webdriverio"
+      "expect-webdriverio",
+      "@wdio/runner",
+      "@wdio/types",
+      "jasmine"
     ],
-    "target": "es2022"
+    "target": "es2022",
+    "module": "commonjs"
   }
 }
